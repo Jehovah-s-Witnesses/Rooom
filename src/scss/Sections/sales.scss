@@ -1,0 +1,25 @@
+.sales {
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+.sales__container {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.sales__wrapper-content {
+  width: 27%;
+}
+
+.sales__title {
+  @include font-medium-2();
+  color: map-get($colors, 'primary-black');
+  margin-bottom: 30px;
+}
+
+.sales__text {
+  @include font-small-size();
+  color: map-get($colors, 'primary-grey');
+}

@@ -1,0 +1,25 @@
+.communication {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.communication__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.communication__wrapper-content {
+  width: 82%;
+}
+
+.communication__text {
+  @include font-title();
+  color: map-get($colors, 'primary-grey');
+  margin-bottom: 30px;
+}
+
+.communication__paragraph {
+  @include font-title();
+  color: map-get($colors,'secondary-black');
+}

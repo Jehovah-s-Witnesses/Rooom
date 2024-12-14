@@ -1,0 +1,26 @@
+.construction {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.construction__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 140px;
+}
+
+.construction__wrapper-content {
+  width: 25%;
+}
+
+.construction__title {
+  @include font-medium-2();
+  color: map-get($colors, 'primary-black');
+  margin-bottom: 30px;
+}
+
+.construction__text {
+  @include font-small-size();
+  color: map-get($colors, 'primary-grey');
+}

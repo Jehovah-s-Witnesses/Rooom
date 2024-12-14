@@ -1,0 +1,47 @@
+.reviews {
+  padding: 100px;
+}
+
+.reviews__container {
+  background-image: url("../static/Image/Laughing-girl.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 150px;
+}
+
+.reviews__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 26%;
+  padding: 5px;
+}
+
+.reviews__blockquote {
+  @include font-medium-size();
+  line-height: calc(36 / 32);
+  color: map-get($colors, 'primary-white');
+
+}
+
+.reviews__content-icon {
+  width: 100px;
+}
+
+.reviews__link {
+  @include font-xs-small();
+  line-height: calc(16 / 12);
+  color: map-get($colors, 'primary-white');
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+}
